@@ -15,6 +15,8 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     private var coffeeSizeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,21 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.coffeeSizeSegmentedControl.topAnchor.constraint(equalTo: self.tableView.bottomAnchor, constant: 40).isActive = true
         self.coffeeSizeSegmentedControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+    }
+    
+    @IBAction func save() {
+        let name = self.nameTextField.text
+        let email = self.emailTextField.text
+        let selectedSize = self.coffeeSizeSegmentedControl.titleForSegment(at: self.coffeeSizeSegmentedControl.selectedSegmentIndex)
+        
+        guard let indexPath = self.tableView.indexPathForSelectedRow else {
+            fatalError("Error in selecting coffee!")
+        }
+        
+        self.vm.name = name
+        self.vm.email = email
+        self.vm.selectedSize = selectedSize
+        self.vm.selectedType = self.vm.types[indexPath.row]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

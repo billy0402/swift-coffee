@@ -99,7 +99,7 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ZD-vj-Kq7">
-                                <rect key="frame" x="107" y="628" width="200" height="34"/>
+                                <rect key="frame" x="107" y="627" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="fle-8s-AsO"/>
                                 </constraints>
@@ -107,7 +107,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94n-Bi-tzr">
-                                <rect key="frame" x="107" y="670" width="200" height="34"/>
+                                <rect key="frame" x="107" y="669" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="nbw-Tk-eD8"/>
                                 </constraints>
@@ -130,9 +130,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="3Aq-r2-PhS">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="Ymh-NY-SS1"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="jhE-R3-izc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="jhE-R3-izc">
+                            <connections>
+                                <action selector="save" destination="PXK-8b-mUx" id="7Qz-xH-W2j"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="94n-Bi-tzr" id="PQZ-Zv-k8J"/>
+                        <outlet property="nameTextField" destination="2ZD-vj-Kq7" id="sJw-fE-I5Y"/>
                         <outlet property="tableView" destination="7Yw-2g-yVo" id="SEB-5c-ySA"/>
                     </connections>
                 </viewController>
