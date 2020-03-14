@@ -18,6 +18,7 @@
 		CE7054CB241CCBB100CEB656 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7054CA241CCBB100CEB656 /* Order.swift */; };
 		CE7054CE241CD05F00CEB656 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7054CD241CD05F00CEB656 /* OrderViewModel.swift */; };
 		CE7054D0241CD13300CEB656 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7054CF241CD13300CEB656 /* OrderListViewModel.swift */; };
+		CE7054D2241CD78100CEB656 /* AddCoffeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7054D1241CD78100CEB656 /* AddCoffeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CE7054CA241CCBB100CEB656 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		CE7054CD241CD05F00CEB656 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		CE7054CF241CD13300CEB656 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		CE7054D1241CD78100CEB656 /* AddCoffeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				CE7054CD241CD05F00CEB656 /* OrderViewModel.swift */,
 				CE7054CF241CD13300CEB656 /* OrderListViewModel.swift */,
+				CE7054D1241CD78100CEB656 /* AddCoffeOrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				CE7054CB241CCBB100CEB656 /* Order.swift in Sources */,
 				CE7054AC241CBC4300CEB656 /* AppDelegate.swift in Sources */,
+				CE7054D2241CD78100CEB656 /* AddCoffeOrderViewModel.swift in Sources */,
 				CE7054AE241CBC4300CEB656 /* SceneDelegate.swift in Sources */,
 				CE7054C3241CBF9D00CEB656 /* OrdersTableViewController.swift in Sources */,
 				CE7054C8241CC81F00CEB656 /* WebService.swift in Sources */,
