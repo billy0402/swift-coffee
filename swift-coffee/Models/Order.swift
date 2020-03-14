@@ -27,3 +27,21 @@ struct Order: Codable {
     let type: CoffeeType
     let size: CoffeeSize
 }
+
+extension Order {
+
+    init?(_ vm: AddCoffeOrderViewModel) {
+        guard let name = vm.name,
+            let email = vm.email,
+            let selectedType = CoffeeType(rawValue: vm.selectedType!.lowercased()),
+            let selectedSize = CoffeeSize(rawValue: vm.selectedSize!.lowercased()) else {
+            return nil
+        }
+        
+        self.name = name
+        self.email = email
+        self.type = selectedType
+        self.size = selectedSize
+    }
+
+}
