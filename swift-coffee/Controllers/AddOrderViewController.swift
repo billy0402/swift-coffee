@@ -14,12 +14,25 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
     private var vm = AddCoffeOrderViewModel()
     
     @IBOutlet weak var tableView: UITableView!
+    private var coffeeSizeSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
+    }
+    
+    private func setupUI() {
+        self.coffeeSizeSegmentedControl = UISegmentedControl(items: self.vm.sizes)
+        self.coffeeSizeSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(self.coffeeSizeSegmentedControl)
+        
+        self.coffeeSizeSegmentedControl.topAnchor.constraint(equalTo: self.tableView.bottomAnchor, constant: 40).isActive = true
+        self.coffeeSizeSegmentedControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
