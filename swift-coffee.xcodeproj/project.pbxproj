@@ -24,6 +24,8 @@
 		CE7054B4241CBC4300CEB656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7054B7241CBC4300CEB656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7054B9241CBC4300CEB656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7054BF241CBC9100CEB656 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE7054C0241CBCC600CEB656 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,8 @@
 			children = (
 				CE7054AA241CBC4300CEB656 /* swift-coffee */,
 				CE7054A9241CBC4300CEB656 /* Products */,
+				CE7054C0241CBCC600CEB656 /* .gitignore */,
+				CE7054BF241CBC9100CEB656 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
